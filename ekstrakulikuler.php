@@ -57,102 +57,33 @@
     <div class="container-fluid pt-5 pb-5 bg-light">
   <div class="container text-center">
     <h2 class="display-3 bg-info" id="Eskul"></h2>
-
+    
     <div class="row pt-4 gx-3">
-      <!-- Card 1 -->
+      <?php $eskul = 
+      [
+      ["gambar" => "IMAGE/paskibra.CUSrUT02.png", "nama" => "Paskibra"],
+      ["gambar" => "IMAGE/pd.BOb73STp.jpg", "nama" => "Perisai Diri"],
+      ["gambar" => "IMAGE/pramuka._o46wF_H.png", "nama" => "Pramuka"],
+      ["gambar" => "IMAGE/plh.CiRRajfk.png", "nama" => "PLH"],
+      ["gambar" => "IMAGE/pmr.DcEPzLrL.png", "nama" => "PMR"],
+      ["gambar" => "IMAGE/pks.Dq5fCjv5.png", "nama" => "PKS"],
+      ["gambar" => "IMAGE/itclub.git_ccFJ.png", "nama" => "IT Club"],
+      ["gambar" => "IMAGE/cinematography.BbBViTYp.png", "nama" => "Cinemato Graphy"],
+      ["gambar" => "IMAGE/englishclub.B6WEchF5.png", "nama" => "Engglis Club"],
+      ["gambar" => "IMAGE/irma.DWG1-rKq.png", "nama" => "Irma"]
+    ];
+    
+    foreach ($eskul as $item) {?>
+
       <div class="col-md-6">
         <div class="card">
-          <img src="IMAGE/paskibra.CUSrUT02.png" class="card-img-top" alt="..." >
+          <img src="<?= $item['gambar'] ?>" class="card-img-top" alt="..." width="100" height="100">
           <div class="card-body">
-            <h5 class="card-title">Paskibra</h5>
+            <h5 class="card-title"><?= $item['nama'] ?></h5>
           </div>
         </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/pd.BOb73STp.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Perisai diri</h5>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/pramuka._o46wF_H.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Pramuka</h5>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-       <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/pks.Dq5fCjv5.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">PKS</h5>
-          </div>
-        </div>
-      </div>
-      <!-- Card 5 -->
-       <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/pramuka._o46wF_H.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Pramuka</h5>
-          </div>
-        </div>
-      </div>
-<!-- Card 6 -->
- <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/plh.CiRRajfk.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">PLH</h5>
-          </div>
-        </div>
-      </div>
-<!-- Card 7 -->
- <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/pmr.DcEPzLrL.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">PMR</h5>
-          </div>
-        </div>
-      </div>
-      <!-- Card 8 -->
-        <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/itclub.git_ccFJ.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">IT Club</h5>
-          </div>
-        </div>
-      </div>
-      <!-- Card 9-->
-        <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/irma.DWG1-rKq.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Irma</h5>
-          </div>
-        </div>
-      </div>
-      <!-- Card 10 -->
-        <div class="col-md-6">
-        <div class="card">
-          <img src="IMAGE/bulutangkis.BNw_YZPx.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Bulu Tangkis</h5>
-          </div>
-        </div>
-      </div>
-
+      <?php } ?>
     </div>
   </div>
 </div>
